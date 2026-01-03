@@ -9,11 +9,21 @@
 
 <div class="card">
   <h1>🦅 RavenSub</h1>
-  <p>Proteja seus links</p>
+  <p>Escolha a plataforma e gere seu link</p>
 
-  <input id="link" type="text" placeholder="Cole seu link aqui">
+  <select id="platform">
+    <option value="">Selecione a plataforma</option>
+    <option value="youtube">YouTube</option>
+    <option value="tiktok">TikTok</option>
+    <option value="kwai">Kwai</option>
+    <option value="instagram">Instagram</option>
+    <option value="whatsapp_grupo">WhatsApp Grupo</option>
+    <option value="whatsapp_canal">WhatsApp Canal</option>
+  </select>
 
-  <button id="enviar" onclick="gerar()" style="display:none;">
+  <input id="link" type="text" placeholder="Cole o link aqui">
+
+  <button id="gerar" style="display:none;" onclick="gerarLink()">
     Gerar Link
   </button>
 
