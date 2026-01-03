@@ -8,28 +8,24 @@
 <body>
 
 <div class="card">
-  <h1>🦅 RavenSub</h1>
-  <p>Escolha a plataforma e gere seu link</p>
 
-  <select id="platform">
-    <option value="">Selecione a plataforma</option>
-    <option value="youtube">YouTube</option>
-    <option value="tiktok">TikTok</option>
-    <option value="kwai">Kwai</option>
-    <option value="instagram">Instagram</option>
-    <option value="whatsapp_grupo">WhatsApp Grupo</option>
-    <option value="whatsapp_canal">WhatsApp Canal</option>
-  </select>
+<h2>ℹ️ Informações Básicas</h2>
 
-  <input id="link" type="text" placeholder="Cole o link aqui">
+<input id="titulo" placeholder="Título do Link">
+<input id="destino" placeholder="URL de Destino Final">
+<input id="slug" placeholder="Slug Personalizado (opcional)">
 
-  <button id="gerar" style="display:none;" onclick="gerarLink()">
-    Gerar Link
-  </button>
+<h2>🔗 Ações de Redes Sociais</h2>
 
-  <div id="resultado"></div>
+<div id="acoes"></div>
+
+<button onclick="addAcao()">➕ Adicionar Nova Ação</button>
+<button class="gerar" onclick="gerar()">✏️ Gerar Link</button>
+
+<div id="resultado"></div>
+
 </div>
 
-<script src="script.js"></script>
+<script src="create.js"></script>
 </body>
 </html>
